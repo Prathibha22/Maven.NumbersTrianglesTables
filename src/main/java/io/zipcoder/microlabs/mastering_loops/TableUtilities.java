@@ -1,15 +1,41 @@
 package io.zipcoder.microlabs.mastering_loops;
 
+//import sun.font.CStrike;
+
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        return null;
+        String result="";
+        for(int i=1;i<=5;i++) {
+            for (int j = 1; j <= 5; j++) {
+                result+=String.format("%3s" ,i*j);
+                result+=" |";
+            }
+            result+='\n';
+        }
+        return result;
     }
 
     public static String getLargeMultiplicationTable() {
-        return null;
+        String result="";
+        for(int i=1;i<=10;i++) {
+            for (int j = 1; j <= 10; j++) {
+                result+=String.format("%3s" ,i*j);
+                result+=" |";
+            }
+            result+='\n';
+        }
+        return result;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+        String result="";
+        for(int i=1;i<=tableSize;i++) {
+            for (int j = 1; j <= tableSize; j++) {
+                result+=String.format("%3s" ,i*j);
+                result+=" |";
+            }
+            result+='\n';
+        }
+        return result;
     }
 }
